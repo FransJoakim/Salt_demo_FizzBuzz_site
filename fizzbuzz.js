@@ -1,19 +1,36 @@
+const button = document.querySelector('#button-fizzBuzz');
+const input = document.querySelector('#input-fizzBuzz');
+const fizz = document.querySelector('.fizz');
+const buzz = document.querySelector('.buzz');
+const fizzbuzz = document.querySelector('.fizzbuzz');
+const number = document.querySelector('#number');
+const bomb = document.querySelector('.bomb');
+
+button.addEventListener('click', (e) => {
+  e.preventDefault();
+  const inputNumber = input.value;
+  checkingInput(inputNumber);
+});
+
 function checkingInput(val) {
-    if (isNaN(val)) {
-      throw new Error('please provide a number, try again');
-    }
-    if (val > 100 || val < 1) {
-      throw new Error('write a number between 1 and 100');
-    }
-    if (val % 3 === 0 && val % 5 === 0) {
-      return 'FizzBuzz';
-    }
-    if (val % 3 === 0) {
-      return 'Fizz';
-    }
-    if (val % 5 === 0) {
-      return 'Buzz';
-    }
-    return val;
+  bomb.classList.remove('visible');
+  bomb.classList.remove('visible');
+  fizzbuzz.classList.remove('visible');
+  fizz.classList.remove('visible');
+  buzz.classList.remove('visible');
+  number.textContent = " "
+
+  if (isNaN(val)) {
+    bomb.classList.add('visible');
+  } else if (val > 100 || val < 1) {
+    bomb.classList.add('visible');
+  } else if (val % 3 === 0 && val % 5 === 0) {
+    fizzbuzz.classList.add('visible');
+  } else if (val % 3 === 0) {
+    fizz.classList.add('visible');
+  } else if (val % 5 === 0) {
+    buzz.classList.add('visible');
+  } else {
+    number.textContent = val;
   }
-  
+}

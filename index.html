@@ -79,26 +79,27 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="container">
                 <form>
-                    <label for="input">Enter Number</label>
-                    <input type='text' id="input">
-                    <button type= "submit">Play!</button>
+                    <h2 class="typing-demo">Let's play FizzBuzz...</h2>
+                    <label for="input-label" class="input-label">Enter Number</label>
+                    <input type='text' id="input-fizzBuzz">
+                    <button id="button-fizzBuzz" type= "submit">Play!</button>
                 </form>
                 <div class="fizzbuzz-container">
-                    <div class="fizz">
+                    <div class="fizz invisible">
                         <img src="./fizzbuzz/fizz.jpeg" alt="fizz image" width="500px">
                     </div>
-                    <div class="buzz">
+                    <div class="buzz invisible">
                         <img src="./fizzbuzz/buzz.jpeg" alt="buzz image" width="500px">
                     </div>
-                    <div class="fizzbuzz">
-                        <img src="./fizzbuzz/fizz buzz.jpeg" alt="fizzbuzz image" width="500px">
+                    <div class="fizzbuzz invisible">
+                        <img src="./fizzbuzz/fizzbuzz.jpg" alt="fizzbuzz image" width="500px">
                     </div>
-                    <div class="number">
-                        <h1></h1>
+                    <div>
+                        <h1 id="number"></h1>
                     </div>
-                    <div class ="bomb">
+                    <div class ="bomb invisible">
                         <iframe src="https://giphy.com/embed/OMPqWQVhND9Vm" width="480" height="388" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/explosion-OMPqWQVhND9Vm"></a></p>
                     </div>
                 </div>
@@ -110,7 +111,7 @@
 
 
         </main>
-
+        <script src="./fizzbuzz.js"></script>
     </body>
 
 
