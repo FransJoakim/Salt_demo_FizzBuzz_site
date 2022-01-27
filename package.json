@@ -1,0 +1,28 @@
+{
+  "name": "winter22-jsfs-lab-romannumerals",
+  "version": "1.0.0",
+  "description": "## Kata 3 - Roman Numerals",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint '**/*.js' --fix",
+    "lint-watch": "nodemon --exec 'npm run lint --silent'",
+    "pretest":"npm run lint",
+    "test": "mocha --reporter list --exit \"./{,!(node_modules)/**/}*.spec.js\" --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saltsthlm/winter22-jsfs-lab-romanNumerals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saltsthlm/winter22-jsfs-lab-romanNumerals/issues"
+  },
+  "homepage": "https://github.com/saltsthlm/winter22-jsfs-lab-romanNumerals#readme",
+  "devDependencies": {
+    "chai": "^4.3.5",
+    "eslint": "^8.7.0",
+    "eslint-config-salt": "^1.2.0",
+    "mocha": "^9.2.0"
+  }
+}
