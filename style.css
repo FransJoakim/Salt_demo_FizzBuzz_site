@@ -89,6 +89,12 @@ html {
   .fizzbuzz-container {
     width: 40%;
     margin: 0 auto;
+    margin-bottom: 700px;
+  }
+  .center {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
   .invisible {
     display: none;  
@@ -118,4 +124,8 @@ html {
     width: 150px;
     font-size: 18px;
   }
+  #number {
+    font-size: 380px;
+  }
+ 
  
