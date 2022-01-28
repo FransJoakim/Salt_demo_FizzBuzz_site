@@ -1,3 +1,15 @@
+const converterButton = document.querySelector("#arabic-roman-button");
+const inputArabic = document.querySelector("#input-arabic-number");
+const inputRoman = document.querySelector("#input-roman-number");
+
+converterButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  const arabicNum = inputArabic.value;
+  const result = toRomanNumbers(arabicNum);
+  inputRoman.value = result;
+  console.log(result)
+});
+
 function toRomanNumbers(input) {
   const romanTen = ['','I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'];
   const secondDigit = ['','X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC'];
@@ -28,7 +40,3 @@ function toRomanNumbers(input) {
   }   
   
 }
-
-console.log(toRomanNumbers(325));
-
-module.exports.toRomanNumbers = toRomanNumbers;

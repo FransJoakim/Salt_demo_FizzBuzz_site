@@ -7,8 +7,8 @@ function toArabicNumbers(input) {
     let lastDigit = 0;
     reverseArr.forEach( element => {
         const arabicNumm = romanNumbers.find(o => o[1]=== element);
-          console.log(arabicNumm[0]);
-          if(lastDigit <= arabicNumm[0]) {
+
+        if(lastDigit <= arabicNumm[0]) {
             result += arabicNumm[0];
           } else {
             result -= arabicNumm[0];
@@ -18,5 +18,3 @@ function toArabicNumbers(input) {
     
     return result;
 }
-console.log(toArabicNumbers('MMMII'));
-module.exports.toArabicNumbers = toArabicNumbers;
