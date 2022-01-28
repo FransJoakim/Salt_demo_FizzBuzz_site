@@ -81,6 +81,17 @@ html {
       margin:400px 30px;
       margin-bottom:600px ;
   }
+
+  #Fun-n-hard-container {
+    margin:400px 30px;
+    margin-bottom:600px;
+    padding: 100px;
+  }
+
+  #Fun-n-hard-container li {
+
+  }
+
   .green {
       background-color: green;
   }
@@ -181,6 +192,9 @@ html {
     font-family: 'Courier New', Courier, monospace;
   }
 
+  .funHard {
+    margin-top: 0px; 
+  }
   
 
 
